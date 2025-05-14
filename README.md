@@ -17,9 +17,9 @@ A collection of simple and reusable **React components** styled with **Tailwind 
 
 A reusable button component with default Tailwind styling. Easily customizable using `className`.
 
+### 🧩 Code
 
 ```jsx
-
 import React from 'react'
 
 const Button = ({ children, onClick, className = "", type = "button" }) => {
@@ -35,7 +35,17 @@ const Button = ({ children, onClick, className = "", type = "button" }) => {
 };
 
 export default Button;
+```
 
+---
+
+## 📦 Container
+
+A responsive container that centers your content with a maximum width.
+
+### 🧩 Code
+
+```jsx
 import React from 'react'
 
 const Container = ({ children, className = "" }) => {
@@ -47,24 +57,39 @@ const Container = ({ children, className = "" }) => {
 };
 
 export default Container;
+```
 
+---
+
+## 🧱 Flex
+
+A flexible layout wrapper using Tailwind’s `flex` utility. Useful for horizontal and vertical layout structures.
+
+### 🧩 Code
+
+```jsx
 import React from 'react'
 
-const Flex = ({
-  children,
-  className = "",
-}) => {
+const Flex = ({ children, className = "" }) => {
   return (
-    <div
-      className={`flex ${className}`}
-    >
+    <div className={`flex ${className}`}>
       {children}
     </div>
   );
 };
 
 export default Flex;
+```
 
+---
+
+## 📝 Input
+
+A basic input component with customizable type, placeholder, and styling.
+
+### 🧩 Code
+
+```jsx
 import React from 'react'
 
 const Input = ({ value, onChange, placeholder = "", className = "", type = "text" }) => {
@@ -80,4 +105,6 @@ const Input = ({ value, onChange, placeholder = "", className = "", type = "text
 };
 
 export default Input;
+```
 
+---
